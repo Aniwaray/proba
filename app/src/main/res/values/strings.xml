@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="edit">Edit Profile</string>
+    <string name="on_boarding1_1">Quick Delivery At Your Doorstep</string>
+    <string name="on_boarding1_2">Enjoy quick pick-up and delivery to your destination</string>
+    <string name="skip_button">Skip</string>
+    <string name="next_button">Next</string>
+    <string name="on_boarding4_1">Flexible Payment</string>
+    <string name="on_boarding4_2">Different modes of payment either before and after delivery without stress</string>
+    <string name="on_boarding3_1">Real-time Tracking</string>
+    <string name="on_boarding3_2">Track your packages/items from the comfort of your home till final destination</string>
+    <string name="sign_up_button">Sign Up</string>
+    <string name="on_boarding3_3">Already have an account?</string>
+    <string name="sign_in_button">Sign in</string>
 </resources>
