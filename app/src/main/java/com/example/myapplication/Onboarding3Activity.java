@@ -4,11 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class Onboarding3Activity extends AppCompatActivity {
 
@@ -16,5 +12,15 @@ public class Onboarding3Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_onboarding3);
+    }
+
+    public void  SignUp1(View v){
+        Intent intent = new Intent(this, SignUpActivity.class);
+        startActivity(intent);
+    }
+
+    public void  SignIn1(View v){
+        Intent intent = new Intent(this, LoginInActivity.class);
+        startActivity(intent);
     }
 }
