@@ -13,6 +13,27 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".TrackingPackageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TransactionSuccessfulActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SendAPackage2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".SendAPackageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddPaymentMethodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity"
             android:exported="false" />
         <activity

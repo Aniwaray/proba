@@ -83,8 +83,8 @@ public class NewPasswordActivity extends AppCompatActivity {
         }
     }
 
-//    public void LogIn2(View v){
-//        Intent intent = new Intent(this, Home.class);
-//        startActivity(intent);
-//    }
+    public void LogIn2(View v){
+        Intent intent = new Intent(this, HomeActivity.class);
+        startActivity(intent);
+    }
 }

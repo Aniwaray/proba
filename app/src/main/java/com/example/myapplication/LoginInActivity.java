@@ -49,10 +49,10 @@ public class LoginInActivity extends AppCompatActivity {
                 passText = pass.getText().toString();
                 signIn(emailText, passText);
 
-//                if(user != null) {
-//                    Intent intent = new Intent(Log_in.this, Home.class);
-//                    startActivity(intent);
-//                }
+                if(user != null) {
+                    Intent intent = new Intent(LoginInActivity.this, HomeActivity.class);
+                    startActivity(intent);
+                }
 
             }
         });
