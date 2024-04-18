@@ -98,10 +98,10 @@ public class SignUpActivity extends AppCompatActivity {
 
                 if(fioText.length() != 0 & Patterns.PHONE.matcher(phoneText).matches() & passText.length() != 0 & confText.length() != 0 & passText.equals(confText) == true){
                     createAccount(emailText, passText);
-//                    if(user != null) {
-//                        Intent intent = new Intent(SignUp.this, Home.class);
-//                        startActivity(intent);
-//                    }
+                    if(user != null) {
+                        Intent intent = new Intent(SignUpActivity.this, HomeActivity.class);
+                        startActivity(intent);
+                    }
                 }
                 if(fioText.length() == 0) {
                     fio.setBackground(getDrawable(R.drawable.red_block));
