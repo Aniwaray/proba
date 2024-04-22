@@ -1,8 +1,12 @@
 package com.example.myapplication;
 
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,45 +14,41 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class ProfileActivity extends AppCompatActivity {
+public class DeliverySuccessfulActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_delivery_successful);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-    }
-    public void Card(View v){
-        Intent intent = new Intent(this, AddPaymentMethodActivity.class);
-        startActivity(intent);
-    }
-    public void Notification(View v){
-        Intent intent = new Intent(this, NotificationActivity.class);
-        startActivity(intent);
-    }
-    public void Statements(View v){
-        Intent intent = new Intent(this, SendAPackageActivity.class);
-        startActivity(intent);
-    }
-    public void Home(View v){
-        Intent intent = new Intent(this, HomeActivity.class);
-        startActivity(intent);
+        ImageView anim = findViewById(R.id.anim);
+
+        anim.setBackgroundResource(R.drawable.animation);
+
+        AnimationDrawable frameAnimation = (AnimationDrawable) anim.getBackground();
+
+        new CountDownTimer(2650, 1000) {
+
+            public void onTick(long millisUntilFinished) {
+                frameAnimation.start();
+            }
+
+            public void onFinish() {
+                frameAnimation.stop();
+                anim.setBackground(getDrawable(R.drawable.trunssucc_big));
+                TextView suc = findViewById(R.id.textView37);
+                suc.setText("Transaction Successful");
+            }
+
+        }.start();
     }
     public void Track(View v){
         Intent intent = new Intent(this, TrackingPackageActivity.class);
-        startActivity(intent);
-    }
-    public void LogOut(View v){
-        Intent intent = new Intent(this, LoginInActivity.class);
-        startActivity(intent);
-    }
-    public void Wallet(View v){
-        Intent intent = new Intent(this, WalletActivity.class);
         startActivity(intent);
     }
 }
