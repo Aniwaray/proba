@@ -10,45 +10,25 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class ProfileActivity extends AppCompatActivity {
+public class SendAPackage3Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_send_a_package3);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
     }
-    public void Card(View v){
-        Intent intent = new Intent(this, AddPaymentMethodActivity.class);
-        startActivity(intent);
-    }
-    public void Notification(View v){
-        Intent intent = new Intent(this, NotificationActivity.class);
-        startActivity(intent);
-    }
-    public void Statements(View v){
+    public void Right(View v){
         Intent intent = new Intent(this, SendAPackageActivity.class);
         startActivity(intent);
     }
-    public void Home(View v){
-        Intent intent = new Intent(this, HomeActivity.class);
-        startActivity(intent);
-    }
-    public void Track(View v){
-        Intent intent = new Intent(this, TrackingPackageActivity.class);
-        startActivity(intent);
-    }
-    public void LogOut(View v){
-        Intent intent = new Intent(this, LoginInActivity.class);
-        startActivity(intent);
-    }
-    public void Wallet(View v){
-        Intent intent = new Intent(this, WalletActivity.class);
+    public void Successful(View v){
+        Intent intent = new Intent(this, DeliverySuccessfulActivity.class);
         startActivity(intent);
     }
 }

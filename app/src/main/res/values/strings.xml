@@ -21,4 +21,8 @@
     <string name="create_account">Create an account</string>
     <string name="complete_sign_up">Complete the sign up process to get started</string>
     <string name="full_name">Full name</string>
+
+    <string name="tracking_number">Tracking Number</string>
+    <string name="r_7458_4567_4434_5854">R-7458-4567-4434-5854</string>
+    <string name="package_status">Package Status</string>
 </resources>

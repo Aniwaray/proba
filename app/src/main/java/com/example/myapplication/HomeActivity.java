@@ -33,4 +33,8 @@ public class HomeActivity extends AppCompatActivity {
         Intent intent = new Intent(this, TrackingPackageActivity.class);
         startActivity(intent);
     }
+    public void Wallet(View v){
+        Intent intent = new Intent(this, WalletActivity.class);
+        startActivity(intent);
+    }
 }

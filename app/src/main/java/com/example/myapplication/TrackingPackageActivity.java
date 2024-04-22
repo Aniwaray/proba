@@ -32,4 +32,13 @@ public class TrackingPackageActivity extends AppCompatActivity {
         Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }
+    public void Wallet(View v){
+        Intent intent = new Intent(this, WalletActivity.class);
+        startActivity(intent);
+    }
+
+    public void Package3(View v){
+        Intent intent = new Intent(this, SendAPackage3Activity.class);
+        startActivity(intent);
+    }
 }
