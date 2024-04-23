@@ -10,35 +10,21 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class HomeActivity extends AppCompatActivity {
+public class CallRiderActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_call_rider);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
     }
-
-    public void Profile(View v){
-        Intent intent = new Intent(this, ProfileActivity.class);
-        startActivity(intent);
-    }
-
-    public void Track(View v){
-        Intent intent = new Intent(this, TrackingPackageActivity.class);
-        startActivity(intent);
-    }
-    public void Wallet(View v){
-        Intent intent = new Intent(this, WalletActivity.class);
-        startActivity(intent);
-    }
-    public void Chats(View v){
-        Intent intent = new Intent(this, ChatsActivity.class);
+    public void Right(View v){
+        Intent intent = new Intent(this, ChatRiderActivity.class);
         startActivity(intent);
     }
 }
