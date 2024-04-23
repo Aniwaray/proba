@@ -372,7 +372,6 @@
                         android:layout_height="62dp"
                         android:layout_gravity="center"
                         android:background="@drawable/but"
-                        android:onClick="Referrals"
                         android:orientation="horizontal">
 
                         <ImageView
@@ -430,7 +429,6 @@
                         android:layout_height="62dp"
                         android:layout_gravity="center"
                         android:background="@drawable/but"
-                        android:onClick="About"
                         android:orientation="horizontal">
 
                         <ImageView

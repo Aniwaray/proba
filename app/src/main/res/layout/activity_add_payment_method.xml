@@ -233,7 +233,6 @@
                         android:layout_gravity="center"
                         android:layout_marginTop="189dp"
                         android:backgroundTint="@color/blue"
-                        android:onClick="SignUp_SignUp"
                         android:text="Proceed to pay"
                         app:cornerRadius="4dp" />
                 </LinearLayout>
